@@ -1,0 +1,36 @@
+<HTML>
+  <head>
+    <link rel="stylesheet" href="calculation.css">
+      <title>Meal Cost Calculator</title>
+  </head>
+  <body>
+      <div class="container">
+          <h1 class="form-heading">Meal Cost Calculator</h1>
+          <form id="meal-form">
+              <div class="form-group">
+                  <label for="sandwich" class="form-label">Sandwich:</label>
+                  <input type="number" name="sandwich" id="sandwich" class="form-input">
+              </div>
+              <div class="form-group">
+                  <label for="salad" class="form-label">Salad:</label>
+                  <input type="number" name="salad" id="salad" class="form-input">
+              </div>
+              <div class="form-group">
+                  <label for="soup" class="form-label">Soup:</label>
+                  <input type="number" name="soup" id="soup" class="form-input">
+              </div>
+              <div class="form-group">
+                  <label for="side" class="form-label">Side:</label>
+                  <input type="number" name="side" id="side" class="form-input">
+              </div>
+              <div class="form-group">
+                  <input type="button" value="Calculate" onclick="calculateMealCost()">
+              </div>
+              <div class="form-group">
+                  <span>Total Cost: </span><span id="total-cost" class="total-cost"></span>
+              </div>
+          </form>
+      </div>
+      <script src="calculation.js"></script>
+  </body>
+</HTML>
